@@ -1,0 +1,32 @@
+﻿# Secrets and local configuration
+.env
+.env.*
+!.env.example
+config/database.php
+*credentials*.php
+
+# Backups and temporary files
+*.backup*
+*.bak
+*~
+*.tmp
+*.log
+
+# Local uploads and generated data
+storage/
+uploads/
+private/
+logs/
+
+# Test-only scripts
+scripts/test_*.php
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local dependencies
+vendor/

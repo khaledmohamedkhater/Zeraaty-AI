@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>معاينة لوحة المزارع | زِراعتي AI</title>
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/farmer-dashboard.css">
+    <link rel="stylesheet" href="assets/farmer-preview.css">
+</head>
+<body>
+<header class="preview-topbar">
+    <div class="brand">
+        <span class="brand-icon">🌱</span>
+        <span>زِراعتي <b>AI</b></span>
+    </div>
+    <div class="topbar-user">
+        <span>مرحبًا، أحمد محمد</span>
+        <span class="user-avatar">أ</span>
+    </div>
+</header>
+<main class="container">
+<div class="preview-layout">
+<aside class="preview-sidebar">
+    <p class="sidebar-heading">القائمة الرئيسية</p>
+    <a class="sidebar-link active" href="#overview">🏠 الرئيسية</a>
+    <a class="sidebar-link" href="#crops">🌾 المحاصيل</a>
+    <a class="sidebar-link" href="#water">💧 متابعة المياه</a>
+    <a class="sidebar-link" href="#analysis">🔬 تحليل النباتات</a>
+    <div class="sidebar-note">
+        <strong>زِراعتي AI</strong>
+        <p>إدارة زراعية أذكى لمستقبل أفضل</p>
+    </div>
+</aside>
+<div class="preview-content">
+<div class="farmer-dashboard">
+
+    <section class="dashboard-welcome" id="overview">
+        <div>
+            <p class="eyebrow">لوحة المزارع الذكية</p>
+            <h1>مرحبًا، أحمد محمد 🌱</h1>
+            <p>تابع محاصيلك واستهلاك المياه وسجلات الري من مكان واحد.</p>
+            <div class="dashboard-actions">
+                <a class="button" href="#">إدارة المحاصيل والري</a>
+                <a class="button button-light" href="#">تقارير المياه</a>
+            </div>
+        </div>
+        <div class="welcome-mark" aria-hidden="true">🌾</div>
+    </section>
+
+    <section class="dashboard-stats">
+        <article class="stat-card">
+            <span class="stat-label">عدد المحاصيل</span>
+            <strong class="stat-value">4</strong>
+            <span class="stat-note">المحاصيل المسجلة</span>
+        </article>
+        <article class="stat-card">
+            <span class="stat-label">إجمالي المساحة</span>
+            <strong class="stat-value">125.50</strong>
+            <span class="stat-note">متر مربع</span>
+        </article>
+        <article class="stat-card">
+            <span class="stat-label">إجمالي المياه</span>
+            <strong class="stat-value">2,450</strong>
+            <span class="stat-note">لتر مسجل</span>
+        </article>
+        <article class="stat-card">
+            <span class="stat-label">مرات الري</span>
+            <strong class="stat-value">12</strong>
+            <span class="stat-note">عملية ري مسجلة</span>
+        </article>
+    </section>
+
+    <section class="dashboard-grid" id="crops">
+        <div class="dashboard-panel">
+            <div class="panel-heading">
+                <h2>محاصيلك</h2>
+                <span class="stat-note">4 محاصيل</span>
+            </div>
+            <div class="dashboard-crop-list">
+                <article class="dashboard-crop">
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <span class="crop-symbol">🌾</span>
+                        <div class="crop-info">
+                            <strong>قمح</strong>
+                            <span>الحقل الشمالي · 50 م²</span>
+                        </div>
+                    </div>
+                    <div class="crop-info" style="text-align:left">
+                        <strong>1,200 لتر</strong>
+                        <span>آخر ري: اليوم</span>
+                    </div>
+                </article>
+                <article class="dashboard-crop">
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <span class="crop-symbol">🍅</span>
+                        <div class="crop-info">
+                            <strong>طماطم</strong>
+                            <span>الحقل الجنوبي · 75.5 م²</span>
+                        </div>
+                    </div>
+                    <div class="crop-info" style="text-align:left">
+                        <strong>1,250 لتر</strong>
+                        <span>آخر ري: أمس</span>
+                    </div>
+                </article>
+            </div>
+            <div class="dashboard-actions">
+                <a class="button button-light" href="#">عرض تفاصيل المحاصيل والري</a>
+            </div>
+        </div>
+
+        <aside class="dashboard-panel" id="water">
+            <div class="panel-heading">
+                <h2>متابعة المياه</h2>
+            </div>
+            <span class="stat-label">استهلاك آخر 7 أيام</span>
+            <strong class="stat-value">850 لتر</strong>
+            <span class="stat-note">خلال آخر سبعة أيام</span>
+            <div class="dashboard-alert">
+                <strong>آخر عملية ري</strong>
+                <p>اليوم — الساعة 8:30 صباحًا</p>
+            </div>
+            <div class="dashboard-alert">
+                <strong>سجلات الري</strong>
+                <p>تم تسجيل 12 عملية ري.</p>
+            </div>
+        </aside>
+    </section>
+
+    <section class="water-chart-panel">
+    <div class="chart-heading">
+        <div>
+            <h2>استهلاك المياه الأسبوعي</h2>
+            <p>بيانات تجريبية لآخر 7 أيام</p>
+        </div>
+        <span class="chart-badge">هذا الأسبوع</span>
+    </div>
+
+    <div class="water-chart">
+        <div class="chart-column">
+            <div class="chart-bar" style="height:45%"></div>
+            <span>السبت</span>
+        </div>
+        <div class="chart-column">
+            <div class="chart-bar" style="height:65%"></div>
+            <span>الأحد</span>
+        </div>
+        <div class="chart-column">
+            <div class="chart-bar" style="height:38%"></div>
+            <span>الاثنين</span>
+        </div>
+        <div class="chart-column">
+            <div class="chart-bar" style="height:80%"></div>
+            <span>الثلاثاء</span>
+        </div>
+        <div class="chart-column">
+            <div class="chart-bar" style="height:55%"></div>
+            <span>الأربعاء</span>
+        </div>
+        <div class="chart-column">
+            <div class="chart-bar" style="height:92%"></div>
+            <span>الخميس</span>
+        </div>
+        <div class="chart-column">
+            <div class="chart-bar" style="height:48%"></div>
+            <span>الجمعة</span>
+        </div>
+    </div>
+</section>
+
+<section class="crop-health-panel" id="crop-health">
+    <div class="panel-heading">
+        <div>
+            <h2>حالة المحاصيل</h2>
+            <p>متابعة تجريبية للحالة الزراعية</p>
+        </div>
+        <span class="chart-badge">تجريبي</span>
+    </div>
+
+    <div class="health-grid">
+        <article class="health-card">
+            <div class="health-icon">🌾</div>
+            <div class="health-details">
+                <strong>القمح — الحقل الشمالي</strong>
+                <span class="health-status status-good">● حالة جيدة</span>
+                <p>لا توجد ملاحظات تجريبية حاليًا.</p>
+            </div>
+        </article>
+
+        <article class="health-card">
+            <div class="health-icon">🍅</div>
+            <div class="health-details">
+                <strong>الطماطم — الحقل الجنوبي</strong>
+                <span class="health-status status-warning">● يحتاج متابعة</span>
+                <p>يُنصح بمراجعة سجل الري ومتابعة النبات.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="smart-alerts-panel">
+    <div class="panel-heading">
+        <div>
+            <h2>التنبيهات الذكية</h2>
+            <p>إشعارات توضيحية للمعاينة</p>
+        </div>
+        <span class="alert-count">2 تنبيه</span>
+    </div>
+
+    <div class="smart-alert alert-water">
+        <span class="alert-icon">💧</span>
+        <div>
+            <strong>متابعة موعد الري</strong>
+            <p>راجع احتياجات محصول الطماطم قبل عملية الري القادمة.</p>
+        </div>
+    </div>
+
+    <div class="smart-alert alert-crop">
+        <span class="alert-icon">🌱</span>
+        <div>
+            <strong>متابعة حالة المحصول</strong>
+            <p>تابع نمو الطماطم وسجّل أي تغيرات تلاحظها.</p>
+        </div>
+    </div>
+
+    <p class="demo-disclaimer">هذه التنبيهات وحالات المحاصيل بيانات تجريبية وليست نتائج تحليل زراعي فعلي.</p>
+</section>
+<section class='dashboard-analysis' id="analysis">
+        <strong>تحليل صور النباتات</strong>
+        <p>يمكنك متابعة حالة تحليل الصور من صفحة المحاصيل.</p>
+        <a href="#">الانتقال إلى المحاصيل والري</a>
+    </section>
+
+</div>
+</div></div></main>
+</body>
+</html>
+
+
+
+
